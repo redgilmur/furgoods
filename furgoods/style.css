@@ -1,0 +1,168 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B2C8F2; /* Light Periwinkle Blue */
+  }
+  
+  /* Header */
+  header {
+    background-color: #F2B2D2; /* Light Pink */
+    padding: 10px;
+    text-align: center;
+    color: #333333;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Banner */
+  .banner {
+    background-color: #F2E0B2;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Cards (FAQ Collapse) */
+  .cards {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .card-header {
+    padding: 10px;
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  .card-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .card.expanded .card-content {
+    display: block;
+  }
+  
+  /* Introduce Yourself */
+  .introduce {
+    background-color: #F2E0B2;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .introduce img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .intro-text {
+    max-width: 400px;
+  }
+  .intro-text h2
+  .intro-text p{
+   margin: 0;
+   padding: 20px 0;
+  }
+  .intro-text p {
+    margin-top: 20px;
+  }
+  
+  /* Services (Carousel) */
+  .services {
+    background-color: #ffffff;
+    padding: 40px;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: fit-content;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .carousel-inner img {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+  }
+  
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* YouTube Videos */
+  .youtube-videos {
+    background-color: #F2E0B2;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .youtube-video {
+    margin: 20px auto;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #F2B2D2;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #333333;
+  }
+  
+  .footer-links,
+  .footer-logo,
+  .footer-info {
+    flex: 1 1 30%;
+  }
+  
+  #logo {
+    transition: transform 0.3s ease;
+  }
+  
+  #logo:hover {
+    transform: scale(1.2);
+  }
